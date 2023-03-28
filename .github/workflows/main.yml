@@ -1,0 +1,11 @@
+name: ptg
+
+on: push
+
+jobs:
+  build:
+    name: Deploy to Netlify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/6407b451ac196d13556233c2

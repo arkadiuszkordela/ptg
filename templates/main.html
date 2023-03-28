@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Python Text Games</title>
+	<meta name="description" content= "Open platform of text games created in Python"/>
+	<meta name="keywords" content="python, text, games, community, entertainment, art, fun, alternative"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+	<link rel="shortcut icon" href="{% static 'icon.png' %}" type="image/x-icon"/>
+</head>
+<body>
+	<div id="main">
+		<div id="window">
+			{% block content %}
+
+            {% endblock %}
+		</div>
+		<div id="nav">
+			<a><img src="{% static 'logo.png' %}" /></a>
+			<a class="button_home" href="/home"><b>HOME</b></a>
+			<br><br>
+			<a class="button_games" href="/games"><b>GAMES</b></a>
+			<br><br>
+			<a class="button_account" href="/account"><b>ACCOUNT</b></a>
+			<br><br>
+			<a class="button_community" href="/community"><b>COMMUNITY</b></a>
+			<br><br>
+			<a class="button_faq" href="/faq"><b>FAQ</b></a>
+			<br><br>
+			<a class="log_frame">You are logged in now as: 
+			<br><br>
+			<a class="user_frame">{{ request.user }}
+		</div>
+	</div>
+</body>
+</html>
