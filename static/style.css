@@ -183,3 +183,24 @@ body
 	width: 240px;
 	text-align: left
 }
+
+.alink
+{
+	color: gray;
+	text-decoration: none;
+}
+
+.alink:link
+{
+	color: gray;
+}
+
+.alink:visited
+{
+	color: gray;
+}
+
+.alink:hover
+{
+	color: gray;
+}
