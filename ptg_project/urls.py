@@ -17,16 +17,17 @@ from django.contrib import admin
 from django.urls import path
 from home.views import home_view
 from games.views import games_view
-from account.views import account_view
 from community.views import community_view
+from statute.views import statute_view
 from faq.views import faq_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name= 'home'),
     path('home/', home_view, name = 'home'),
     path('games/', games_view, name = 'games'),
-    path('account/', account_view, name = 'account'),
     path('community/', community_view, name = 'community'),
+    path('statute/', statute_view, name = 'statute'),
     path('faq/', faq_view, name = 'faq'),
 ]
