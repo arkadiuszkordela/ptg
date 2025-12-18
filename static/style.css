@@ -1,0 +1,95 @@
+body
+{
+	color: white;
+	background-color: black;
+	font-family: "Times New Roman";
+	font-size: 14px
+}
+    
+#main
+{
+	width: 1000px;
+	height: 615px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	line-height: 15%;
+	border: 1px solid white
+}
+
+#window
+{
+	float: right;
+	width: 690px;
+	height: 615px;
+	border-left: 1px solid white;
+	padding-left: 9px;
+	line-height: 5px;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+  	scrollbar-color: black
+}
+#window::-webkit-scrollbar
+{
+	width: 2px
+}
+#window::-webkit-scrollbar-track
+{
+	background-color: black
+}
+#window::-webkit-scrollbar-thumb
+{
+	background-color: white
+}
+
+#nav
+{
+	float: left;
+	width: 299px;
+	height: 614px;
+	font-size: 14px
+}
+
+.button_home 
+{
+    margin-left: 10px;
+	margin-top: 25px;
+    color: white;
+    border-style: solid;
+    border-width: 2px; 
+    padding: 20px;
+    transition-duration: 1s;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 30px;
+	width: 235px;
+	text-align: center
+}
+.button_home:hover 
+{
+    background-color: white;
+    color: black;
+    transition-duration: 1s
+}
+
+.alink
+{
+	color: gray;
+	text-decoration: none;
+}
+
+.alink:link
+{
+	color: gray;
+}
+
+.alink:visited
+{
+	color: gray;
+}
+
+.alink:hover
+{
+	color: gray;
+}
